@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - Modern Kütüphane</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Enhanced Loader Animation (same as homepage) -->
+    <div class="loader">
+        <div class="book">
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Litera<span>Hub</span></h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" data-lang-key="nav-home">Anasayfa</a></li>
+                    <li><a href="all-books.html" data-lang-key="nav-books">Kitaplar</a></li>
+                    <li><a href="etkinlikler.html" data-lang-key="nav-events">Etkinlikler</a></li>
+                    <li><a href="services.html" class="active" data-lang-key="nav-services">Hizmetler</a></li>
+                    <li><a href="about.html" data-lang-key="nav-about">Hakkımızda</a></li>
+                    <li><a href="contact.html" data-lang-key="nav-contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div class="language-selector">
+                    <div class="selected-lang">
+                        <img src="img/world.png" alt="TR Flag" id="current-flag">
+                        <span id="current-lang-abbr">TR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="lang-dropdown">
+                        <li>
+                            <button class="lang-btn" data-lang="tr">
+                                <img src="img/world.png" alt="TR Flag">
+                                <span>TR</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-btn" data-lang="en">
+                                <img src="img/united-kingdom.png" alt="EN Flag">
+                                <span>EN</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-btn" data-lang="de">
+                                <img src="img/german.png" alt="DE Flag">
+                                <span>DE</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" id="nav-login-btn" class="btn btn-secondary btn-sm" data-lang-key="nav-login">Giriş Yap</a>
+                    <a href="#" id="nav-register-btn" class="btn btn-primary btn-sm" data-lang-key="nav-register">Üye Ol</a>
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-lang-key="services-hero-title">Kütüphane Hizmetlerimiz</h1>
+                <p class="hero-subtitle" data-lang-key="services-hero-subtitle">Modern teknoloji ve geleneksel kütüphanecilik anlayışını birleştirerek size en iyi hizmeti sunuyoruz</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label" data-lang-key="services-stat-services">Farklı Hizmet</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label" data-lang-key="services-stat-access">Dijital Erişim</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8500+</span>
+                        <span class="stat-label" data-lang-key="services-stat-members">Memnun Üye</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-video">
+                <img src="img/anasayfa7.jpg" alt="Kütüphane Hizmetleri">
+                <div class="video-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="main-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="main-services-title">Ana Hizmetlerimiz</h2>
+                <p data-lang-key="main-services-subtitle">Okuyucularımızın ihtiyaçlarına yönelik kapsamlı hizmet yelpazesi</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Digital Library Service -->
+                <div class="service-item">
+                    <div class="service-media">
+                        <img src="img/hizmetler1.jpg" alt="Dijital Kütüphane">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-lang-key="service-digital-title">Dijital Kütüphane</h3>
+                        <p data-lang-key="service-digital-desc">25.000+ e-kitap, 5.000+ sesli kitap ve dijital dergilere 7/24 erişim imkanı. Mobil uygulamamız ile istediğiniz yerden okuyun.</p>
+                        <ul class="service-features">
+                            <li data-lang-key="service-digital-feature1">E-kitap koleksiyonu</li>
+                            <li data-lang-key="service-digital-feature2">Sesli kitap arşivi</li>
+                            <li data-lang-key="service-digital-feature3">Dijital dergi erişimi</li>
+                            <li data-lang-key="service-digital-feature4">Mobil uygulama</li>
+                        </ul>
+                        <a href="service-detail.html?id=1" class="btn btn-primary service-detail-btn" data-service-id="1" data-lang-key="service-learn-more">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+
+                <!-- Research Services -->
+                <div class="service-item reverse">
+                    <div class="service-media">
+                        <img src="img/hizmetler2.jpg" alt="Araştırma Hizmetleri">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-lang-key="service-research-title">Araştırma Hizmetleri</h3>
+                        <p data-lang-key="service-research-desc">Akademik araştırmalarınız için profesyonel destek. Uzman kütüphanecilerimiz size rehberlik eder ve kaynak bulmanızda yardımcı olur.</p>
+                        <ul class="service-features">
+                            <li data-lang-key="service-research-feature1">Akademik danışmanlık</li>
+                            <li data-lang-key="service-research-feature2">Kaynak tarama</li>
+                            <li data-lang-key="service-research-feature3">Veri tabanı erişimi</li>
+                            <li data-lang-key="service-research-feature4">Araştırma metodolojisi</li>
+                        </ul>
+                        <a href="service-detail.html?id=2" class="btn btn-primary service-detail-btn" data-service-id="2" data-lang-key="service-learn-more">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+
+                <!-- Educational Programs -->
+                <div class="service-item">
+                    <div class="service-media">
+                        <img src="img/hizmetler3.jpg" alt="Eğitim Programları">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-lang-key="service-education-title">Eğitim Programları</h3>
+                        <p data-lang-key="service-education-desc">Her yaş grubuna yönelik eğitim programları. Okuma yazma kurslarından dijital okuryazarlığa kadar geniş bir yelpaze.</p>
+                        <ul class="service-features">
+                            <li data-lang-key="service-education-feature1">Okuma yazma kursları</li>
+                            <li data-lang-key="service-education-feature2">Dijital okuryazarlık</li>
+                            <li data-lang-key="service-education-feature3">Yaratıcı yazma atölyeleri</li>
+                            <li data-lang-key="service-education-feature4">Çocuk eğitim programları</li>
+                        </ul>
+                        <a href="service-detail.html?id=3" class="btn btn-primary service-detail-btn" data-service-id="3" data-lang-key="service-learn-more">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+
+                <!-- Library Consultancy Service -->
+                <div class="service-item reverse">
+                    <div class="service-media">
+                        <img src="img/hizmetler4.jpg" alt="Kütüphane Danışmanlığı">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Kütüphane Danışmanlığı</h3>
+                        <p>Uzmanlarımızdan birebir danışmanlık alın, kütüphane kaynaklarını en verimli şekilde kullanın.</p>
+                        <ul class="service-features">
+                            <li>Bireysel danışmanlık</li>
+                            <li>Kütüphane oryantasyonu</li>
+                            <li>Kaynak yönetimi desteği</li>
+                            <li>Özel araştırma yardımı</li>
+                        </ul>
+                        <a href="service-detail.html?id=4" class="btn btn-primary service-detail-btn" data-service-id="4">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="video-showcase-title">Hizmetlerimizi Keşfedin</h2>
+                <p data-lang-key="video-showcase-subtitle">Kütüphanemizin sunduğu hizmetleri videolarla tanıyın</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card" data-video-src="videos/video1.mp4">
+                    <div class="video-thumbnail">
+                        <img src="img/anasayfa7.jpg" alt="Kütüphane Turu">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 data-lang-key="video-tour-title">Kütüphane Turu</h3>
+                        <p data-lang-key="video-tour-desc">Modern kütüphanemizin tüm bölümlerini keşfedin</p>
+                        <span class="video-duration">3:45</span>
+                    </div>
+                </div>
+
+                <div class="video-card" data-video-src="videos/video2.mp4">
+                    <div class="video-thumbnail">
+                        <img src="img/anasayfa11.jpg" alt="Dijital Hizmetler">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 data-lang-key="video-digital-title">Dijital Hizmetler</h3>
+                        <p data-lang-key="video-digital-desc">E-kitap ve dijital kaynaklara nasıl erişeceğinizi öğrenin</p>
+                        <span class="video-duration">2:30</span>
+                    </div>
+                </div>
+
+                <div class="video-card" data-video-src="videos/video3.mp4">
+                    <div class="video-thumbnail">
+                        <img src="img/anasayfa12.jpg" alt="Çocuk Programları">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 data-lang-key="video-children-title">Çocuk Programları</h3>
+                        <p data-lang-key="video-children-desc">Çocuklarınız için özel etkinlik ve programlar</p>
+                        <span class="video-duration">4:15</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Modal -->
+            <div id="video-modal" class="video-modal" style="display:none;">
+                <div class="video-modal-content">
+                    <span class="video-modal-close">&times;</span>
+                    <video id="video-modal-video" width="100%" height="400" controls></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="additional-services-title">Ek Hizmetlerimiz</h2>
+                <p data-lang-key="additional-services-subtitle">Kütüphane deneyiminizi zenginleştiren özel hizmetler</p>
+            </div>
+            
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-lang-key="service-clubs-title">Kitap Kulüpleri</h3>
+                    <p data-lang-key="service-clubs-desc">Farklı türlerde kitap tartışma gruplarına katılın ve yeni arkadaşlar edinin.</p>
+                    <div class="service-schedule">
+                        <i class="fas fa-clock"></i>
+                        <span data-lang-key="service-clubs-schedule">Her Cumartesi 14:00</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 data-lang-key="service-cafe-title">Kütüphane Kafe</h3>
+                    <p data-lang-key="service-cafe-desc">Kitap okurken keyifli vakit geçirebileceğiniz rahat ve sessiz ortam.</p>
+                    <div class="service-schedule">
+                        <i class="fas fa-clock"></i>
+                        <span data-lang-key="service-cafe-schedule">09:00 - 22:00</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3 data-lang-key="service-print-title">Baskı ve Fotokopi</h3>
+                    <p data-lang-key="service-print-desc">Yüksek kaliteli baskı, fotokopi ve tarama hizmetleri uygun fiyatlarla.</p>
+                    <div class="service-schedule">
+                        <i class="fas fa-clock"></i>
+                        <span data-lang-key="service-print-schedule">Kütüphane saatleri</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 data-lang-key="service-wifi-title">Ücretsiz Wi-Fi</h3>
+                    <p data-lang-key="service-wifi-desc">Tüm kütüphane alanında hızlı ve güvenli internet erişimi.</p>
+                    <div class="service-schedule">
+                        <i class="fas fa-signal"></i>
+                        <span data-lang-key="service-wifi-speed">100 Mbps Hız</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 data-lang-key="service-events-title">Etkinlik Organizasyonu</h3>
+                    <p data-lang-key="service-events-desc">Yazar söyleşileri, konferanslar ve kültürel etkinlikler düzenliyoruz.</p>
+                    <div class="service-schedule">
+                        <i class="fas fa-calendar"></i>
+                        <span data-lang-key="service-events-schedule">Aylık etkinlikler</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3 data-lang-key="service-audio-title">Sesli Kitap Dinleme</h3>
+                    <p data-lang-key="service-audio-desc">Özel dinleme kabinlerinde sesli kitapları rahatlıkla dinleyin.</p>
+                    <div class="service-schedule">
+                        <i class="fas fa-volume-up"></i>
+                        <span data-lang-key="service-audio-quality">HD Kalite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Hours -->
+    <section class="service-hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-info">
+                    <h2 data-lang-key="hours-title">Hizmet Saatlerimiz</h2>
+                    <p data-lang-key="hours-subtitle">Size en uygun zamanda hizmet verebilmek için geniş saatlerde açığız</p>
+                    
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <span class="day" data-lang-key="hours-weekdays">Hafta İçi</span>
+                            <span class="time">09:00 - 20:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day" data-lang-key="hours-friday">Cuma</span>
+                            <span class="time">09:00 - 22:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day" data-lang-key="hours-saturday">Cumartesi</span>
+                            <span class="time">10:00 - 22:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day" data-lang-key="hours-sunday">Pazar</span>
+                            <span class="time">10:00 - 18:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="special-hours">
+                        <h3 data-lang-key="special-hours-title">Özel Günler</h3>
+                        <p data-lang-key="special-hours-desc">Resmi tatillerde özel saatlerimiz geçerlidir. Güncel bilgi için bizi arayın.</p>
+                    </div>
+                </div>
+                
+                <div class="hours-image">
+                    <img src="img/anasayfa9.jpg" alt="Kütüphane İç Mekan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang-key="contact-cta-title">Hizmetlerimiz Hakkında Sorularınız mı Var?</h2>
+                <p data-lang-key="contact-cta-subtitle">Uzman ekibimiz size yardımcı olmak için burada. Bize ulaşın ve en iyi hizmeti alın.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large" data-lang-key="contact-cta-call">Bizi Arayın</a>
+                    <a href="#" class="btn btn-secondary btn-large" data-lang-key="contact-cta-visit">Ziyaret Edin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Litera<span>Hub</span></h3>
+                    <p data-lang-key="footer-about">Modern kütüphanemiz, 2008 yılından beri okuyuculara hizmet vermektedir. Amacımız, bilgiye erişimi kolaylaştırmak ve okuma kültürünü yaygınlaştırmaktır.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang-key="footer-links">Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html" data-lang-key="footer-link-home">Anasayfa</a></li>
+                        <li><a href="all-books.html" data-lang-key="footer-link-catalog">Katalog</a></li>
+                        <li><a href="etkinlikler.html" data-lang-key="footer-link-events">Etkinlikler</a></li>
+                        <li><a href="services.html" data-lang-key="footer-link-services">Hizmetler</a></li>
+                        <li><a href="about.html" data-lang-key="footer-link-about">Hakkımızda</a></li>
+                        <li><a href="contact.html" data-lang-key="footer-link-contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3 data-lang-key="footer-hours">Çalışma Saatleri</h3>
+                    <ul>
+                        <li><span data-lang-key="footer-day-mon">Pazartesi</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-tue">Salı</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-wed">Çarşamba</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-thu">Perşembe</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-fri">Cuma</span>: 09:00 - 22:00</li>
+                        <li><span data-lang-key="footer-day-sat">Cumartesi</span>: 10:00 - 22:00</li>
+                        <li><span data-lang-key="footer-day-sun">Pazar</span>: 10:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang-key="footer-contact">İletişim</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-lang-key="footer-address">Kütüphane Caddesi No:42, İstanbul</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+90 212 123 4567</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@literahub.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LiteraHub. <span data-lang-key="footer-rights">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

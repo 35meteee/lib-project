@@ -1,0 +1,878 @@
+{
+  "1": {
+    "id": 1,
+    "translations": {
+      "tr": {
+        "title": "Dijital Kütüphane",
+        "subtitle": "Modern teknoloji ile okuma deneyiminizi zenginleştirin",
+        "description": "25.000+ e-kitap, 5.000+ sesli kitap ve dijital dergilere 7/24 erişim imkanı. Mobil uygulamamız ile istediğiniz yerden okuyun ve dijital okuma dünyasının keyfini çıkarın.",
+        "features": [
+          {
+            "title": "Geniş E-kitap Koleksiyonu",
+            "description": "25.000'den fazla e-kitap ile her türde okuma materyaline erişim. Klasiklerden çağdaş eserlere, akademik yayınlardan popüler romanlara kadar geniş bir yelpaze.",
+            "icon": "fas fa-book-open"
+          },
+          {
+            "title": "Sesli Kitap Arşivi",
+            "description": "5.000+ sesli kitap ile hareket halindeyken bile okuma keyfini yaşayın. Profesyonel seslendirmenler tarafından hazırlanmış kaliteli içerikler.",
+            "icon": "fas fa-headphones"
+          },
+          {
+            "title": "Dijital Dergi Erişimi",
+            "description": "500+ güncel dergi ve süreli yayına anında erişim. Bilim, teknoloji, sanat, spor ve daha birçok alanda güncel içerikler.",
+            "icon": "fas fa-newspaper"
+          },
+          {
+            "title": "Mobil Uygulama",
+            "description": "iOS ve Android uygulamaları ile her yerden erişim. Offline okuma, not alma ve işaretleme özellikleri ile gelişmiş okuma deneyimi.",
+            "icon": "fas fa-mobile-alt"
+          }
+        ],
+        "benefits": [
+          "7/24 kesintisiz erişim imkanı",
+          "Çoklu cihaz desteği ve senkronizasyon",
+          "Offline okuma özelliği",
+          "Kişiselleştirilmiş kitap önerileri",
+          "Sosyal okuma ve paylaşım özellikleri",
+          "Gelişmiş arama ve filtreleme",
+          "Not alma ve işaretleme araçları"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Üye Olun",
+            "description": "Kütüphane üyeliğiniz ile dijital platformumuza giriş yapın ve hesabınızı aktifleştirin"
+          },
+          {
+            "step": 2,
+            "title": "Keşfedin",
+            "description": "Geniş koleksiyonumuzdan kategori, yazar veya konu bazında istediğiniz içeriği bulun"
+          },
+          {
+            "step": 3,
+            "title": "İndirin ve Okuyun",
+            "description": "Seçtiğiniz kitapları cihazınıza indirin ve istediğiniz yerden okuma keyfini çıkarın"
+          }
+        ],
+        "whyChoose": {
+          "title": "Neden Dijital Kütüphanemizi Seçmelisiniz?",
+          "reasons": [
+            "Türkiye'nin en geniş dijital kitap koleksiyonu",
+            "Kullanıcı dostu arayüz ve gelişmiş özellikler",
+            "Sürekli güncellenen içerik arşivi",
+            "Profesyonel teknik destek hizmeti",
+            "Uygun fiyatlı üyelik seçenekleri",
+            "Güvenli ve hızlı platform altyapısı"
+          ]
+        },
+        "stats": [
+          { "number": "25,000+", "label": "E-kitap" },
+          { "number": "5,000+", "label": "Sesli Kitap" },
+          { "number": "500+", "label": "Dergi" },
+          { "number": "24/7", "label": "Erişim" }
+        ]
+      },
+      "en": {
+        "title": "Digital Library",
+        "subtitle": "Enrich your reading experience with modern technology",
+        "description": "Access to 25,000+ e-books, 5,000+ audiobooks and digital magazines 24/7. Read anywhere with our mobile app and enjoy the digital reading world.",
+        "features": [
+          {
+            "title": "Extensive E-book Collection",
+            "description": "Access to all types of reading materials with over 25,000 e-books. A wide range from classics to contemporary works, academic publications to popular novels.",
+            "icon": "fas fa-book-open"
+          },
+          {
+            "title": "Audiobook Archive",
+            "description": "Enjoy reading even while on the move with 5,000+ audiobooks. Quality content prepared by professional voice actors.",
+            "icon": "fas fa-headphones"
+          },
+          {
+            "title": "Digital Magazine Access",
+            "description": "Instant access to 500+ current magazines and periodicals. Current content in science, technology, arts, sports and many other fields.",
+            "icon": "fas fa-newspaper"
+          },
+          {
+            "title": "Mobile Application",
+            "description": "Access from anywhere with iOS and Android apps. Advanced reading experience with offline reading, note-taking and bookmarking features.",
+            "icon": "fas fa-mobile-alt"
+          }
+        ],
+        "benefits": [
+          "24/7 uninterrupted access",
+          "Multi-device support and synchronization",
+          "Offline reading feature",
+          "Personalized book recommendations",
+          "Social reading and sharing features",
+          "Advanced search and filtering",
+          "Note-taking and bookmarking tools"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Sign Up",
+            "description": "Log in to our digital platform with your library membership and activate your account"
+          },
+          {
+            "step": 2,
+            "title": "Explore",
+            "description": "Find the content you want from our extensive collection by category, author or topic"
+          },
+          {
+            "step": 3,
+            "title": "Download and Read",
+            "description": "Download your selected books to your device and enjoy reading from anywhere"
+          }
+        ],
+        "whyChoose": {
+          "title": "Why Choose Our Digital Library?",
+          "reasons": [
+            "Turkey's largest digital book collection",
+            "User-friendly interface and advanced features",
+            "Continuously updated content archive",
+            "Professional technical support service",
+            "Affordable membership options",
+            "Secure and fast platform infrastructure"
+          ]
+        },
+        "stats": [
+          { "number": "25,000+", "label": "E-books" },
+          { "number": "5,000+", "label": "Audiobooks" },
+          { "number": "500+", "label": "Magazines" },
+          { "number": "24/7", "label": "Access" }
+        ]
+      },
+      "de": {
+        "title": "Digitale Bibliothek",
+        "subtitle": "Bereichern Sie Ihr Leseerlebnis mit moderner Technologie",
+        "description": "Zugang zu 25.000+ E-Books, 5.000+ Hörbüchern und digitalen Zeitschriften rund um die Uhr. Lesen Sie überall mit unserer mobilen App und genießen Sie die digitale Lesewelt.",
+        "features": [
+          {
+            "title": "Umfangreiche E-Book-Sammlung",
+            "description": "Zugang zu allen Arten von Lesematerialien mit über 25.000 E-Books. Eine breite Palette von Klassikern bis zu zeitgenössischen Werken, akademischen Publikationen bis zu populären Romanen.",
+            "icon": "fas fa-book-open"
+          },
+          {
+            "title": "Hörbuch-Archiv",
+            "description": "Genießen Sie das Lesen auch unterwegs mit 5.000+ Hörbüchern. Qualitätsinhalte, die von professionellen Sprechern vorbereitet wurden.",
+            "icon": "fas fa-headphones"
+          },
+          {
+            "title": "Digitaler Zeitschriftenzugang",
+            "description": "Sofortiger Zugang zu 500+ aktuellen Zeitschriften und Periodika. Aktuelle Inhalte in Wissenschaft, Technologie, Kunst, Sport und vielen anderen Bereichen.",
+            "icon": "fas fa-newspaper"
+          },
+          {
+            "title": "Mobile Anwendung",
+            "description": "Zugang von überall mit iOS- und Android-Apps. Erweiterte Leseerfahrung mit Offline-Lesen, Notizen und Lesezeichen-Funktionen.",
+            "icon": "fas fa-mobile-alt"
+          }
+        ],
+        "benefits": [
+          "24/7 ununterbrochener Zugang",
+          "Multi-Geräte-Unterstützung und Synchronisation",
+          "Offline-Lesefunktion",
+          "Personalisierte Buchempfehlungen",
+          "Soziale Lese- und Sharing-Funktionen",
+          "Erweiterte Suche und Filterung",
+          "Notizen- und Lesezeichen-Tools"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Registrieren",
+            "description": "Melden Sie sich mit Ihrer Bibliotheksmitgliedschaft auf unserer digitalen Plattform an und aktivieren Sie Ihr Konto"
+          },
+          {
+            "step": 2,
+            "title": "Entdecken",
+            "description": "Finden Sie den gewünschten Inhalt aus unserer umfangreichen Sammlung nach Kategorie, Autor oder Thema"
+          },
+          {
+            "step": 3,
+            "title": "Herunterladen und Lesen",
+            "description": "Laden Sie Ihre ausgewählten Bücher auf Ihr Gerät herunter und genießen Sie das Lesen von überall"
+          }
+        ],
+        "whyChoose": {
+          "title": "Warum unsere digitale Bibliothek wählen?",
+          "reasons": [
+            "Die größte digitale Buchsammlung der Türkei",
+            "Benutzerfreundliche Oberfläche und erweiterte Funktionen",
+            "Kontinuierlich aktualisiertes Inhaltsarchiv",
+            "Professioneller technischer Support-Service",
+            "Erschwingliche Mitgliedschaftsoptionen",
+            "Sichere und schnelle Plattform-Infrastruktur"
+          ]
+        },
+        "stats": [
+          { "number": "25.000+", "label": "E-Books" },
+          { "number": "5.000+", "label": "Hörbücher" },
+          { "number": "500+", "label": "Zeitschriften" },
+          { "number": "24/7", "label": "Zugang" }
+        ]
+      }
+    },
+    "heroImage": "/placeholder.svg?height=500&width=700",
+    "featuresImage": "/placeholder.svg?height=400&width=600",
+    "benefitsImage": "/placeholder.svg?height=450&width=650",
+    "icon": "fas fa-laptop"
+  },
+  "2": {
+    "id": 2,
+    "translations": {
+      "tr": {
+        "title": "Araştırma Hizmetleri",
+        "subtitle": "Akademik başarınız için profesyonel destek",
+        "description": "Akademik araştırmalarınız için profesyonel destek alın. Uzman kütüphanecilerimiz size rehberlik eder, kaynak bulmanızda yardımcı olur ve araştırma sürecinizi optimize eder.",
+        "features": [
+          {
+            "title": "Akademik Danışmanlık",
+            "description": "Uzman kütüphanecilerden birebir akademik araştırma desteği. Tez, makale ve proje çalışmalarınız için profesyonel rehberlik hizmeti.",
+            "icon": "fas fa-user-graduate"
+          },
+          {
+            "title": "Kapsamlı Kaynak Tarama",
+            "description": "Uluslararası veri tabanlarında profesyonel kaynak tarama hizmeti. Konunuzla ilgili en güncel ve güvenilir kaynakları bulmanızda yardım.",
+            "icon": "fas fa-search-plus"
+          },
+          {
+            "title": "Veri Tabanı Erişimi",
+            "description": "50+ uluslararası akademik veri tabanına tam erişim. JSTOR, ScienceDirect, IEEE, PubMed ve daha birçok prestijli platform.",
+            "icon": "fas fa-database"
+          },
+          {
+            "title": "Araştırma Metodolojisi Eğitimi",
+            "description": "Bilimsel araştırma yöntemleri konusunda eğitim ve destek. Veri toplama, analiz ve raporlama tekniklerinde uzmanlaşın.",
+            "icon": "fas fa-chart-line"
+          }
+        ],
+        "benefits": [
+          "Uzman kütüphaneci desteği",
+          "Uluslararası veri tabanlarına erişim",
+          "Araştırma metodolojisi eğitimi",
+          "Kaynak doğrulama ve değerlendirme hizmeti",
+          "Atıf ve referans düzenleme desteği",
+          "İstatistiksel analiz danışmanlığı",
+          "Akademik yazım teknikleri eğitimi"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Randevu Alın",
+            "description": "Araştırma konunuz için uzman kütüphanecimizden randevu alın ve ihtiyaçlarınızı belirtin"
+          },
+          {
+            "step": 2,
+            "title": "Strateji Geliştirin",
+            "description": "Araştırma stratejinizi birlikte belirleyin ve kaynak tarama planınızı oluşturun"
+          },
+          {
+            "step": 3,
+            "title": "Araştırın ve Analiz Edin",
+            "description": "Profesyonel destek ile araştırmanızı gerçekleştirin ve sonuçlarınızı analiz edin"
+          }
+        ],
+        "whyChoose": {
+          "title": "Neden Araştırma Hizmetlerimizi Seçmelisiniz?",
+          "reasons": [
+            "10+ yıl deneyimli uzman kütüphaneci kadrosu",
+            "Geniş veri tabanı erişimi ve kaynak ağı",
+            "Kişiselleştirilmiş araştırma stratejileri",
+            "Hızlı ve etkili sonuç odaklı yaklaşım",
+            "Akademik etik ve standartlara uygunluk",
+            "Sürekli güncellenen metodoloji bilgisi"
+          ]
+        },
+        "stats": [
+          { "number": "50+", "label": "Veri Tabanı" },
+          { "number": "10", "label": "Uzman Kütüphaneci" },
+          { "number": "1000+", "label": "Tamamlanan Proje" },
+          { "number": "95%", "label": "Memnuniyet Oranı" }
+        ]
+      },
+      "en": {
+        "title": "Research Services",
+        "subtitle": "Professional support for your academic success",
+        "description": "Get professional support for your academic research. Our expert librarians guide you, help you find resources and optimize your research process.",
+        "features": [
+          {
+            "title": "Academic Consulting",
+            "description": "One-on-one academic research support from expert librarians. Professional guidance service for your thesis, article and project work.",
+            "icon": "fas fa-user-graduate"
+          },
+          {
+            "title": "Comprehensive Resource Scanning",
+            "description": "Professional resource scanning service in international databases. Help finding the most current and reliable sources related to your topic.",
+            "icon": "fas fa-search-plus"
+          },
+          {
+            "title": "Database Access",
+            "description": "Full access to 50+ international academic databases. JSTOR, ScienceDirect, IEEE, PubMed and many other prestigious platforms.",
+            "icon": "fas fa-database"
+          },
+          {
+            "title": "Research Methodology Training",
+            "description": "Training and support on scientific research methods. Specialize in data collection, analysis and reporting techniques.",
+            "icon": "fas fa-chart-line"
+          }
+        ],
+        "benefits": [
+          "Expert librarian support",
+          "Access to international databases",
+          "Research methodology training",
+          "Source verification and evaluation service",
+          "Citation and reference formatting support",
+          "Statistical analysis consulting",
+          "Academic writing techniques training"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Make an Appointment",
+            "description": "Make an appointment with our expert librarian for your research topic and specify your needs"
+          },
+          {
+            "step": 2,
+            "title": "Develop Strategy",
+            "description": "Determine your research strategy together and create your resource scanning plan"
+          },
+          {
+            "step": 3,
+            "title": "Research and Analyze",
+            "description": "Conduct your research with professional support and analyze your results"
+          }
+        ],
+        "whyChoose": {
+          "title": "Why Choose Our Research Services?",
+          "reasons": [
+            "Expert librarian staff with 10+ years of experience",
+            "Extensive database access and resource network",
+            "Personalized research strategies",
+            "Fast and effective result-oriented approach",
+            "Compliance with academic ethics and standards",
+            "Continuously updated methodology knowledge"
+          ]
+        },
+        "stats": [
+          { "number": "50+", "label": "Databases" },
+          { "number": "10", "label": "Expert Librarians" },
+          { "number": "1000+", "label": "Completed Projects" },
+          { "number": "95%", "label": "Satisfaction Rate" }
+        ]
+      },
+      "de": {
+        "title": "Forschungsdienste",
+        "subtitle": "Professionelle Unterstützung für Ihren akademischen Erfolg",
+        "description": "Erhalten Sie professionelle Unterstützung für Ihre akademische Forschung. Unsere Fachbibliothekare leiten Sie an, helfen Ihnen bei der Ressourcenfindung und optimieren Ihren Forschungsprozess.",
+        "features": [
+          {
+            "title": "Akademische Beratung",
+            "description": "Individuelle akademische Forschungsunterstützung von Fachbibliothekaren. Professioneller Beratungsservice für Ihre Abschlussarbeiten, Artikel und Projektarbeiten.",
+            "icon": "fas fa-user-graduate"
+          },
+          {
+            "title": "Umfassende Ressourcensuche",
+            "description": "Professioneller Ressourcensuchservice in internationalen Datenbanken. Hilfe beim Finden der aktuellsten und zuverlässigsten Quellen zu Ihrem Thema.",
+            "icon": "fas fa-search-plus"
+          },
+          {
+            "title": "Datenbankzugang",
+            "description": "Vollzugang zu 50+ internationalen akademischen Datenbanken. JSTOR, ScienceDirect, IEEE, PubMed und viele andere prestigeträchtige Plattformen.",
+            "icon": "fas fa-database"
+          },
+          {
+            "title": "Forschungsmethodologie-Schulung",
+            "description": "Schulung und Unterstützung zu wissenschaftlichen Forschungsmethoden. Spezialisieren Sie sich auf Datensammlung, Analyse und Berichtstechniken.",
+            "icon": "fas fa-chart-line"
+          }
+        ],
+        "benefits": [
+          "Fachbibliothekare-Unterstützung",
+          "Zugang zu internationalen Datenbanken",
+          "Forschungsmethodologie-Schulung",
+          "Quellenverifikation und -bewertungsservice",
+          "Zitations- und Referenzformatierungsunterstützung",
+          "Statistische Analyseberatung",
+          "Akademische Schreibtechniken-Schulung"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Termin vereinbaren",
+            "description": "Vereinbaren Sie einen Termin mit unserem Fachbibliothekar für Ihr Forschungsthema und spezifizieren Sie Ihre Bedürfnisse"
+          },
+          {
+            "step": 2,
+            "title": "Strategie entwickeln",
+            "description": "Bestimmen Sie gemeinsam Ihre Forschungsstrategie und erstellen Sie Ihren Ressourcensuchplan"
+          },
+          {
+            "step": 3,
+            "title": "Forschen und Analysieren",
+            "description": "Führen Sie Ihre Forschung mit professioneller Unterstützung durch und analysieren Sie Ihre Ergebnisse"
+          }
+        ],
+        "whyChoose": {
+          "title": "Warum unsere Forschungsdienste wählen?",
+          "reasons": [
+            "Fachbibliothekare mit 10+ Jahren Erfahrung",
+            "Umfangreicher Datenbankzugang und Ressourcennetzwerk",
+            "Personalisierte Forschungsstrategien",
+            "Schneller und effektiver ergebnisorientierter Ansatz",
+            "Einhaltung akademischer Ethik und Standards",
+            "Kontinuierlich aktualisiertes Methodologiewissen"
+          ]
+        },
+        "stats": [
+          { "number": "50+", "label": "Datenbanken" },
+          { "number": "10", "label": "Fachbibliothekare" },
+          { "number": "1000+", "label": "Abgeschlossene Projekte" },
+          { "number": "95%", "label": "Zufriedenheitsrate" }
+        ]
+      }
+    },
+    "heroImage": "/placeholder.svg?height=500&width=700",
+    "featuresImage": "/placeholder.svg?height=400&width=600",
+    "benefitsImage": "/placeholder.svg?height=450&width=650",
+    "icon": "fas fa-search"
+  },
+  "3": {
+    "id": 3,
+    "translations": {
+      "tr": {
+        "title": "Eğitim Programları",
+        "subtitle": "Her yaş için özel tasarlanmış eğitim programları",
+        "description": "Her yaş grubuna yönelik kapsamlı eğitim programları sunuyoruz. Okuma yazma kurslarından dijital okuryazarlığa, yaratıcı yazma atölyelerinden çocuk eğitim programlarına kadar geniş bir yelpaze.",
+        "features": [
+          {
+            "title": "Okuma Yazma Kursları",
+            "description": "Temel okuma yazma becerilerini geliştiren kapsamlı kurslar. Yetişkinler için özel tasarlanmış metodoloji ile hızlı ve etkili öğrenme.",
+            "icon": "fas fa-pen"
+          },
+          {
+            "title": "Dijital Okuryazarlık",
+            "description": "Modern teknolojileri etkin kullanma becerileri. Bilgisayar kullanımı, internet araştırması ve dijital araçlar konusunda eğitim.",
+            "icon": "fas fa-computer"
+          },
+          {
+            "title": "Yaratıcı Yazma Atölyeleri",
+            "description": "Yaratıcılığınızı geliştiren yazma atölyeleri. Hikaye yazımı, şiir, deneme ve diğer edebi türlerde pratik yapma imkanı.",
+            "icon": "fas fa-feather-alt"
+          },
+          {
+            "title": "Çocuk Eğitim Programları",
+            "description": "3-12 yaş arası çocuklar için özel tasarlanmış eğlenceli öğrenme programları. Oyun tabanlı öğretim metodları ile etkili eğitim.",
+            "icon": "fas fa-child"
+          }
+        ],
+        "benefits": [
+          "Uzman eğitmenler tarafından verilen dersler",
+          "Küçük grup eğitimleri (max 8 kişi)",
+          "Esnek program saatleri",
+          "Sertifikalı kurslar ve belgeler",
+          "Ücretsiz materyal ve kaynak desteği",
+          "Bireysel ilerleme takibi",
+          "Pratik odaklı öğretim metodları"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Program Seçin",
+            "description": "İhtiyacınıza ve seviyenize uygun eğitim programını belirleyin ve detaylı bilgi alın"
+          },
+          {
+            "step": 2,
+            "title": "Kayıt Olun",
+            "description": "Online veya kütüphaneden kayıt işlemlerinizi tamamlayın ve ödeme planınızı belirleyin"
+          },
+          {
+            "step": 3,
+            "title": "Öğrenin ve Gelişin",
+            "description": "Uzman eğitmenlerimizle öğrenme yolculuğunuza başlayın ve becerilerinizi geliştirin"
+          }
+        ],
+        "whyChoose": {
+          "title": "Neden Eğitim Programlarımızı Seçmelisiniz?",
+          "reasons": [
+            "20+ yıl deneyimli eğitmen kadrosu",
+            "Kanıtlanmış öğretim metodolojileri",
+            "Kişiselleştirilmiş öğrenme yaklaşımı",
+            "Modern eğitim teknolojileri kullanımı",
+            "Sürekli güncellenen müfredat",
+            "Yüksek başarı oranları ve memnuniyet"
+          ]
+        },
+        "stats": [
+          { "number": "15+", "label": "Farklı Program" },
+          { "number": "500+", "label": "Mezun Öğrenci" },
+          { "number": "20", "label": "Uzman Eğitmen" },
+          { "number": "98%", "label": "Başarı Oranı" }
+        ]
+      },
+      "en": {
+        "title": "Educational Programs",
+        "subtitle": "Specially designed educational programs for all ages",
+        "description": "We offer comprehensive educational programs for all age groups. A wide range from literacy courses to digital literacy, creative writing workshops to children's education programs.",
+        "features": [
+          {
+            "title": "Literacy Courses",
+            "description": "Comprehensive courses that develop basic reading and writing skills. Fast and effective learning with methodology specially designed for adults.",
+            "icon": "fas fa-pen"
+          },
+          {
+            "title": "Digital Literacy",
+            "description": "Skills for effective use of modern technologies. Training on computer use, internet research and digital tools.",
+            "icon": "fas fa-computer"
+          },
+          {
+            "title": "Creative Writing Workshops",
+            "description": "Writing workshops that develop your creativity. Opportunity to practice in story writing, poetry, essays and other literary genres.",
+            "icon": "fas fa-feather-alt"
+          },
+          {
+            "title": "Children's Education Programs",
+            "description": "Fun learning programs specially designed for children aged 3-12. Effective education with game-based teaching methods.",
+            "icon": "fas fa-child"
+          }
+        ],
+        "benefits": [
+          "Classes taught by expert instructors",
+          "Small group training (max 8 people)",
+          "Flexible program hours",
+          "Certified courses and certificates",
+          "Free material and resource support",
+          "Individual progress tracking",
+          "Practice-oriented teaching methods"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Choose Program",
+            "description": "Determine the educational program suitable for your needs and level and get detailed information"
+          },
+          {
+            "step": 2,
+            "title": "Register",
+            "description": "Complete your registration online or at the library and determine your payment plan"
+          },
+          {
+            "step": 3,
+            "title": "Learn and Develop",
+            "description": "Start your learning journey with our expert instructors and develop your skills"
+          }
+        ],
+        "whyChoose": {
+          "title": "Why Choose Our Educational Programs?",
+          "reasons": [
+            "Instructor staff with 20+ years of experience",
+            "Proven teaching methodologies",
+            "Personalized learning approach",
+            "Use of modern educational technologies",
+            "Continuously updated curriculum",
+            "High success rates and satisfaction"
+          ]
+        },
+        "stats": [
+          { "number": "15+", "label": "Different Programs" },
+          { "number": "500+", "label": "Graduate Students" },
+          { "number": "20", "label": "Expert Instructors" },
+          { "number": "98%", "label": "Success Rate" }
+        ]
+      },
+      "de": {
+        "title": "Bildungsprogramme",
+        "subtitle": "Speziell entwickelte Bildungsprogramme für alle Altersgruppen",
+        "description": "Wir bieten umfassende Bildungsprogramme für alle Altersgruppen. Ein breites Spektrum von Alphabetisierungskursen bis zur digitalen Kompetenz, von kreativen Schreibworkshops bis zu Kinderprogrammen.",
+        "features": [
+          {
+            "title": "Alphabetisierungskurse",
+            "description": "Umfassende Kurse, die grundlegende Lese- und Schreibfähigkeiten entwickeln. Schnelles und effektives Lernen mit speziell für Erwachsene entwickelter Methodik.",
+            "icon": "fas fa-pen"
+          },
+          {
+            "title": "Digitale Kompetenz",
+            "description": "Fähigkeiten für den effektiven Einsatz moderner Technologien. Schulung in Computernutzung, Internetrecherche und digitalen Tools.",
+            "icon": "fas fa-computer"
+          },
+          {
+            "title": "Kreative Schreibworkshops",
+            "description": "Schreibworkshops, die Ihre Kreativität entwickeln. Gelegenheit zum Üben in Geschichtenschreibung, Poesie, Essays und anderen literarischen Genres.",
+            "icon": "fas fa-feather-alt"
+          },
+          {
+            "title": "Kinderprogramme",
+            "description": "Spaßige Lernprogramme speziell für Kinder im Alter von 3-12 Jahren. Effektive Bildung mit spielbasierten Lehrmethoden.",
+            "icon": "fas fa-child"
+          }
+        ],
+        "benefits": [
+          "Unterricht von Fachausbildern",
+          "Kleingruppenschulung (max. 8 Personen)",
+          "Flexible Programmzeiten",
+          "Zertifizierte Kurse und Zertifikate",
+          "Kostenlose Material- und Ressourcenunterstützung",
+          "Individuelle Fortschrittsverfolgung",
+          "Praxisorientierte Lehrmethoden"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Programm wählen",
+            "description": "Bestimmen Sie das für Ihre Bedürfnisse und Ihr Niveau geeignete Bildungsprogramm und erhalten Sie detaillierte Informationen"
+          },
+          {
+            "step": 2,
+            "title": "Registrieren",
+            "description": "Schließen Sie Ihre Registrierung online oder in der Bibliothek ab und bestimmen Sie Ihren Zahlungsplan"
+          },
+          {
+            "step": 3,
+            "title": "Lernen und Entwickeln",
+            "description": "Beginnen Sie Ihre Lernreise mit unseren Fachausbildern und entwickeln Sie Ihre Fähigkeiten"
+          }
+        ],
+        "whyChoose": {
+          "title": "Warum unsere Bildungsprogramme wählen?",
+          "reasons": [
+            "Ausbilderpersonal mit 20+ Jahren Erfahrung",
+            "Bewährte Lehrmethodologien",
+            "Personalisierter Lernansatz",
+            "Einsatz moderner Bildungstechnologien",
+            "Kontinuierlich aktualisierter Lehrplan",
+            "Hohe Erfolgsraten und Zufriedenheit"
+          ]
+        },
+        "stats": [
+          { "number": "15+", "label": "Verschiedene Programme" },
+          { "number": "500+", "label": "Absolventen" },
+          { "number": "20", "label": "Fachausbilder" },
+          { "number": "98%", "label": "Erfolgsrate" }
+        ]
+      }
+    },
+    "heroImage": "/placeholder.svg?height=500&width=700",
+    "featuresImage": "/placeholder.svg?height=400&width=600",
+    "benefitsImage": "/placeholder.svg?height=450&width=650",
+    "icon": "fas fa-graduation-cap"
+  },
+  "4": {
+    "id": 4,
+    "translations": {
+      "tr": {
+        "title": "Kütüphane Danışmanlığı",
+        "subtitle": "Kişiselleştirilmiş kütüphane deneyimi",
+        "description": "Uzmanlarımızdan birebir danışmanlık alın ve kütüphane kaynaklarını en verimli şekilde kullanın. Kişisel ihtiyaçlarınıza özel çözümler ve rehberlik hizmeti.",
+        "features": [
+          {
+            "title": "Bireysel Danışmanlık",
+            "description": "Kişisel ihtiyaçlarınıza özel birebir danışmanlık hizmeti. Araştırma hedefleriniz ve öğrenme stilinize uygun kişiselleştirilmiş yaklaşım.",
+            "icon": "fas fa-user-check"
+          },
+          {
+            "title": "Kütüphane Oryantasyonu",
+            "description": "Kütüphane kaynaklarını tanıma ve kullanma rehberliği. Fiziksel ve dijital koleksiyonlarımızı en etkili şekilde kullanma teknikleri.",
+            "icon": "fas fa-map-marked-alt"
+          },
+          {
+            "title": "Kaynak Yönetimi Desteği",
+            "description": "Araştırma kaynaklarınızı organize etme konusunda destek. Referans yönetimi, not alma ve bilgi düzenleme sistemleri.",
+            "icon": "fas fa-folder-open"
+          },
+          {
+            "title": "Özel Araştırma Yardımı",
+            "description": "Spesifik konularda derinlemesine araştırma desteği. Karmaşık araştırma projeleriniz için uzman rehberlik ve stratejik planlama.",
+            "icon": "fas fa-microscope"
+          }
+        ],
+        "benefits": [
+          "Tamamen kişiselleştirilmiş hizmet",
+          "Uzman kütüphaneci rehberliği",
+          "Zaman tasarrufu ve verimlilik artışı",
+          "Etkili kaynak kullanım teknikleri",
+          "Sürekli destek ve takip",
+          "Araştırma becerilerinde gelişim",
+          "Akademik başarı artışı"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "İhtiyaç Analizi",
+            "description": "Danışmanımız ile detaylı görüşme yaparak ihtiyaçlarınızı ve hedeflerinizi belirleyin"
+          },
+          {
+            "step": 2,
+            "title": "Kişisel Plan Oluşturun",
+            "description": "Size özel bir kullanım planı ve strateji geliştirin, kaynak haritanızı çıkarın"
+          },
+          {
+            "step": 3,
+            "title": "Uygulayın ve Gelişin",
+            "description": "Sürekli danışmanlık desteği ile planınızı uygulayın ve becerilerinizi geliştirin"
+          }
+        ],
+        "whyChoose": {
+          "title": "Neden Kütüphane Danışmanlığımızı Seçmelisiniz?",
+          "reasons": [
+            "15+ yıl deneyimli uzman danışman kadrosu",
+            "Tamamen kişiselleştirilmiş yaklaşım",
+            "Geniş kaynak ağı ve erişim imkanları",
+            "Kanıtlanmış başarı metodolojileri",
+            "Esnek randevu ve destek sistemi",
+            "Sürekli güncellenen hizmet kalitesi"
+          ]
+        },
+        "stats": [
+          { "number": "8", "label": "Uzman Danışman" },
+          { "number": "300+", "label": "Memnun Müşteri" },
+          { "number": "24/7", "label": "Online Destek" },
+          { "number": "100%", "label": "Kişiselleştirilmiş" }
+        ]
+      },
+      "en": {
+        "title": "Library Consultancy",
+        "subtitle": "Personalized library experience",
+        "description": "Get one-on-one consulting from our experts and use library resources most efficiently. Solutions and guidance services tailored to your personal needs.",
+        "features": [
+          {
+            "title": "Individual Consulting",
+            "description": "One-on-one consulting service tailored to your personal needs. Personalized approach suitable for your research goals and learning style.",
+            "icon": "fas fa-user-check"
+          },
+          {
+            "title": "Library Orientation",
+            "description": "Guidance on recognizing and using library resources. Techniques for most effectively using our physical and digital collections.",
+            "icon": "fas fa-map-marked-alt"
+          },
+          {
+            "title": "Resource Management Support",
+            "description": "Support in organizing your research resources. Reference management, note-taking and information organization systems.",
+            "icon": "fas fa-folder-open"
+          },
+          {
+            "title": "Special Research Assistance",
+            "description": "In-depth research support on specific topics. Expert guidance and strategic planning for your complex research projects.",
+            "icon": "fas fa-microscope"
+          }
+        ],
+        "benefits": [
+          "Completely personalized service",
+          "Expert librarian guidance",
+          "Time savings and increased efficiency",
+          "Effective resource utilization techniques",
+          "Continuous support and follow-up",
+          "Development in research skills",
+          "Increased academic success"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Needs Analysis",
+            "description": "Have a detailed meeting with our consultant to determine your needs and goals"
+          },
+          {
+            "step": 2,
+            "title": "Create Personal Plan",
+            "description": "Develop a usage plan and strategy specific to you, create your resource map"
+          },
+          {
+            "step": 3,
+            "title": "Implement and Develop",
+            "description": "Implement your plan with continuous consulting support and develop your skills"
+          }
+        ],
+        "whyChoose": {
+          "title": "Why Choose Our Library Consultancy?",
+          "reasons": [
+            "Expert consultant staff with 15+ years of experience",
+            "Completely personalized approach",
+            "Extensive resource network and access opportunities",
+            "Proven success methodologies",
+            "Flexible appointment and support system",
+            "Continuously updated service quality"
+          ]
+        },
+        "stats": [
+          { "number": "8", "label": "Expert Consultants" },
+          { "number": "300+", "label": "Satisfied Customers" },
+          { "number": "24/7", "label": "Online Support" },
+          { "number": "100%", "label": "Personalized" }
+        ]
+      },
+      "de": {
+        "title": "Bibliotheksberatung",
+        "subtitle": "Personalisierte Bibliothekserfahrung",
+        "description": "Erhalten Sie individuelle Beratung von unseren Experten und nutzen Sie Bibliotheksressourcen am effizientesten. Lösungen und Beratungsdienstleistungen, die auf Ihre persönlichen Bedürfnisse zugeschnitten sind.",
+        "features": [
+          {
+            "title": "Individuelle Beratung",
+            "description": "Individuelle Beratungsdienstleistung, die auf Ihre persönlichen Bedürfnisse zugeschnitten ist. Personalisierter Ansatz, der für Ihre Forschungsziele und Ihren Lernstil geeignet ist.",
+            "icon": "fas fa-user-check"
+          },
+          {
+            "title": "Bibliotheksorientierung",
+            "description": "Anleitung zum Erkennen und Nutzen von Bibliotheksressourcen. Techniken zur effektivsten Nutzung unserer physischen und digitalen Sammlungen.",
+            "icon": "fas fa-map-marked-alt"
+          },
+          {
+            "title": "Ressourcenmanagement-Unterstützung",
+            "description": "Unterstützung bei der Organisation Ihrer Forschungsressourcen. Referenzmanagement, Notizen und Informationsorganisationssysteme.",
+            "icon": "fas fa-folder-open"
+          },
+          {
+            "title": "Spezielle Forschungsunterstützung",
+            "description": "Tiefgreifende Forschungsunterstützung zu spezifischen Themen. Expertenberatung und strategische Planung für Ihre komplexen Forschungsprojekte.",
+            "icon": "fas fa-microscope"
+          }
+        ],
+        "benefits": [
+          "Vollständig personalisierter Service",
+          "Fachbibliothekare-Beratung",
+          "Zeitersparnis und erhöhte Effizienz",
+          "Effektive Ressourcennutzungstechniken",
+          "Kontinuierliche Unterstützung und Nachverfolgung",
+          "Entwicklung von Forschungsfähigkeiten",
+          "Erhöhter akademischer Erfolg"
+        ],
+        "howItWorks": [
+          {
+            "step": 1,
+            "title": "Bedarfsanalyse",
+            "description": "Führen Sie ein detailliertes Gespräch mit unserem Berater, um Ihre Bedürfnisse und Ziele zu bestimmen"
+          },
+          {
+            "step": 2,
+            "title": "Persönlichen Plan erstellen",
+            "description": "Entwickeln Sie einen für Sie spezifischen Nutzungsplan und eine Strategie, erstellen Sie Ihre Ressourcenkarte"
+          },
+          {
+            "step": 3,
+            "title": "Umsetzen und Entwickeln",
+            "description": "Setzen Sie Ihren Plan mit kontinuierlicher Beratungsunterstützung um und entwickeln Sie Ihre Fähigkeiten"
+          }
+        ],
+        "whyChoose": {
+          "title": "Warum unsere Bibliotheksberatung wählen?",
+          "reasons": [
+            "Fachberaterpersonal mit 15+ Jahren Erfahrung",
+            "Vollständig personalisierter Ansatz",
+            "Umfangreiches Ressourcennetzwerk und Zugriffsmöglichkeiten",
+            "Bewährte Erfolgsmethodologien",
+            "Flexibles Termin- und Unterstützungssystem",
+            "Kontinuierlich aktualisierte Servicequalität"
+          ]
+        },
+        "stats": [
+          { "number": "8", "label": "Fachberater" },
+          { "number": "300+", "label": "Zufriedene Kunden" },
+          { "number": "24/7", "label": "Online-Support" },
+          { "number": "100%", "label": "Personalisiert" }
+        ]
+      }
+    },
+    "heroImage": "/placeholder.svg?height=500&width=700",
+    "featuresImage": "/placeholder.svg?height=400&width=600",
+    "benefitsImage": "/placeholder.svg?height=450&width=650",
+    "icon": "fas fa-user-tie"
+  }
+}

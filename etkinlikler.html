@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlikler - Modern Kütüphane</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <div class="loader">
+        <div class="book">
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Litera<span>Hub</span></h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" data-lang-key="nav-home">Anasayfa</a></li>
+                    <li><a href="all-books.html" data-lang-key="nav-books">Kitaplar</a></li>
+                    <li><a href="etkinlikler.html" class="active" data-lang-key="nav-events">Etkinlikler</a></li>
+                    <li><a href="services.html" data-lang-key="nav-services">Hizmetler</a></li>
+                    <li><a href="#" data-lang-key="nav-about">Hakkımızda</a></li>
+                    <li><a href="#" data-lang-key="nav-contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div class="language-selector">
+                    <div class="selected-lang">
+                        <img src="world.png" alt="TR Flag" id="current-flag">
+                        <span id="current-lang-abbr">TR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="lang-dropdown">
+                        <li>
+                            <button class="lang-btn" data-lang="tr">
+                                <img src="world.png" alt="TR Flag">
+                                <span>TR</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-btn" data-lang="en">
+                                <img src="united-kingdom.png" alt="EN Flag">
+                                <span>EN</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-btn" data-lang="de">
+                                <img src="german.png" alt="DE Flag">
+                                <span>DE</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" id="nav-login-btn" class="btn btn-secondary btn-sm" data-lang-key="nav-login">Giriş Yap</a>
+                    <a href="#" id="nav-register-btn" class="btn btn-primary btn-sm" data-lang-key="nav-register">Üye Ol</a>
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Events Hero Section -->
+    <section class="events-hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop>
+                <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-lang-key="events-hero-title">Kütüphane Etkinlikleri</h1>
+                <p class="hero-subtitle" data-lang-key="events-hero-subtitle">Bilgi, sanat ve kültürün buluştuğu özel etkinliklerimize katılın. Her yaştan okuyucu için düzenlenen programlarımızla birlikte öğrenin, keşfedin ve ilham alın.</p>
+                <div class="hero-buttons">
+                    <a href="#upcoming-events" class="btn btn-primary" data-lang-key="events-hero-btn-upcoming">Yaklaşan Etkinlikler</a>
+                    <a href="#event-calendar" class="btn btn-secondary" data-lang-key="events-hero-btn-calendar">Etkinlik Takvimi</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span data-lang-key="scroll-down">Aşağı Kaydır</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Admin Panel Notice (Only visible to admins) -->
+    <div class="admin-panel-notice" id="admin-panel-notice" style="display: none;">
+        <div class="container">
+            <div class="admin-notice-content">
+                <i class="fas fa-cog"></i>
+                <span data-lang-key="admin-notice">Admin Paneli: Etkinlikleri yönetmek için</span>
+                <a href="#" class="btn btn-small btn-primary" id="manage-events-btn" data-lang-key="manage-events">Etkinlikleri Yönet</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Categories Filter -->
+    <section class="event-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all" data-lang-key="filter-all">Tümü</button>
+                <button class="filter-btn" data-filter="workshop" data-lang-key="filter-workshop">Atölyeler</button>
+                <button class="filter-btn" data-filter="talk" data-lang-key="filter-talk">Söyleşiler</button>
+                <button class="filter-btn" data-filter="club" data-lang-key="filter-club">Kitap Kulüpleri</button>
+                <button class="filter-btn" data-filter="children" data-lang-key="filter-children">Çocuk Etkinlikleri</button>
+                <button class="filter-btn" data-filter="exhibition" data-lang-key="filter-exhibition">Sergiler</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="featured-events" id="upcoming-events">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="featured-events-title">Öne Çıkan Etkinlikler</h2>
+                <p data-lang-key="featured-events-subtitle">Bu ay düzenlenecek özel etkinliklerimiz</p>
+            </div>
+            
+            <!-- Events Container - This will be populated by admin panel or API -->
+            <div class="events-grid" id="events-container">
+                <!-- Sample Event 1 -->
+                <div class="featured-event-card" data-category="talk">
+                    <div class="event-image">
+                        <img src="img/etkinlikler1.jpg" alt="Yazar Söyleşisi">
+                        <div class="event-badge featured" data-lang-key="badge-featured">Öne Çıkan</div>
+                        <div class="event-date-badge">
+                            <div class="date-day">15</div>
+                            <div class="date-month" data-lang-key="month-may-short">MAY</div>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-meta">
+                            <div class="event-time">
+                                <i class="far fa-clock"></i>
+                                <span>18:00 - 20:00</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-lang-key="event-location-main">Ana Konferans Salonu</span>
+                            </div>
+                        </div>
+                        <h3 data-lang-key="featured-event-1-title">Orhan Pamuk ile Edebiyat Söyleşisi</h3>
+                        <p data-lang-key="featured-event-1-desc">Nobel ödüllü yazarımız Orhan Pamuk ile modern Türk edebiyatı, yazma süreci ve gelecek projeleri üzerine samimi bir söyleşi.</p>
+                        <div class="event-details">
+                            <div class="event-capacity">
+                                <i class="fas fa-users"></i>
+                                <span data-lang-key="event-capacity">200 kişi</span>
+                            </div>
+                            <div class="event-price">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span data-lang-key="event-free">Ücretsiz</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary event-register-btn" data-lang-key="event-register">Kayıt Ol</a>
+                    </div>
+                </div>
+
+                <!-- Sample Event 2 -->
+                <div class="featured-event-card" data-category="workshop">
+                    <div class="event-image">
+                        <img src="img/etkinlikler2.jpg" alt="Yaratıcı Yazma Atölyesi">
+                        <div class="event-badge workshop" data-lang-key="badge-workshop">Atölye</div>
+                        <div class="event-date-badge">
+                            <div class="date-day">18</div>
+                            <div class="date-month" data-lang-key="month-may-short">MAY</div>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-meta">
+                            <div class="event-time">
+                                <i class="far fa-clock"></i>
+                                <span>14:00 - 17:00</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-lang-key="event-location-workshop">Atölye Salonu</span>
+                            </div>
+                        </div>
+                        <h3 data-lang-key="featured-event-2-title">Yaratıcı Yazma Atölyesi</h3>
+                        <p data-lang-key="featured-event-2-desc">Deneyimli yazarlar eşliğinde hikaye yazma tekniklerini öğrenin, yaratıcılığınızı keşfedin ve kendi hikayenizi yazın.</p>
+                        <div class="event-details">
+                            <div class="event-capacity">
+                                <i class="fas fa-users"></i>
+                                <span data-lang-key="event-capacity-small">25 kişi</span>
+                            </div>
+                            <div class="event-price">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span data-lang-key="event-free">Ücretsiz</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary event-register-btn" data-lang-key="event-register">Kayıt Ol</a>
+                    </div>
+                </div>
+
+                <!-- Sample Event 3 -->
+                <div class="featured-event-card" data-category="children">
+                    <div class="event-image">
+                        <img src="img/anasayfa12.jpg" alt="Çocuk Etkinliği">
+                        <div class="event-badge children" data-lang-key="badge-children">Çocuk</div>
+                        <div class="event-date-badge">
+                            <div class="date-day">22</div>
+                            <div class="date-month" data-lang-key="month-may-short">MAY</div>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-meta">
+                            <div class="event-time">
+                                <i class="far fa-clock"></i>
+                                <span>10:00 - 12:00</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-lang-key="event-location-children">Çocuk Bölümü</span>
+                            </div>
+                        </div>
+                        <h3 data-lang-key="featured-event-3-title">Masallar ve Kukla Tiyatrosu</h3>
+                        <p data-lang-key="featured-event-3-desc">Çocuklar için interaktif masal anlatımı ve renkli kukla tiyatrosu gösterisi. Eğlenceli aktiviteler ve sürprizlerle dolu.</p>
+                        <div class="event-details">
+                            <div class="event-capacity">
+                                <i class="fas fa-users"></i>
+                                <span data-lang-key="event-capacity-children">50 çocuk</span>
+                            </div>
+                            <div class="event-price">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span data-lang-key="event-free">Ücretsiz</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary event-register-btn" data-lang-key="event-register">Kayıt Ol</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin Add Event Button (Only visible to admins) -->
+            <div class="admin-add-event" id="admin-add-event" style="display: none;">
+                <button class="btn btn-secondary btn-large" id="add-event-btn">
+                    <i class="fas fa-plus"></i>
+                    <span data-lang-key="add-event">Yeni Etkinlik Ekle</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar -->
+    <section class="event-calendar" id="event-calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="calendar-title">Etkinlik Takvimi</h2>
+                <p data-lang-key="calendar-subtitle">Tüm etkinliklerimizi takip edin ve kaçırmayın</p>
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav prev" id="prev-month">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="current-month" data-lang-key="current-month">Mayıs 2024</h3>
+                    <button class="calendar-nav next" id="next-month">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar will be generated by JavaScript -->
+                </div>
+            </div>
+            <div class="calendar-events" id="calendar-events">
+                <h4 data-lang-key="selected-date-events">Seçilen Tarih Etkinlikleri</h4>
+                <div class="calendar-event-list" id="event-list">
+                    <p data-lang-key="select-date">Etkinlikleri görmek için takvimden bir tarih seçin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types -->
+    <section class="event-types">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="event-types-title">Etkinlik Türlerimiz</h2>
+                <p data-lang-key="event-types-subtitle">Farklı ilgi alanlarına yönelik çeşitli etkinlikler</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 data-lang-key="type-talks">Yazar Söyleşileri</h3>
+                    <p data-lang-key="type-talks-desc">Ünlü yazarlar ve düşünürlerle buluşma fırsatı</p>
+                    <div class="type-stats">
+                        <span data-lang-key="monthly-events">Aylık 4-6 etkinlik</span>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 data-lang-key="type-workshops">Yaratıcı Atölyeler</h3>
+                    <p data-lang-key="type-workshops-desc">Yazma, resim, el sanatları ve daha fazlası</p>
+                    <div class="type-stats">
+                        <span data-lang-key="weekly-events">Haftalık 2-3 atölye</span>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 data-lang-key="type-clubs">Kitap Kulüpleri</h3>
+                    <p data-lang-key="type-clubs-desc">Farklı türlerde kitap tartışma grupları</p>
+                    <div class="type-stats">
+                        <span data-lang-key="weekly-meetings">Haftalık toplantılar</span>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 data-lang-key="type-children">Çocuk Etkinlikleri</h3>
+                    <p data-lang-key="type-children-desc">Masallar, oyunlar ve eğitici aktiviteler</p>
+                    <div class="type-stats">
+                        <span data-lang-key="weekend-events">Hafta sonu etkinlikleri</span>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-lang-key="type-exhibitions">Sergiler</h3>
+                    <p data-lang-key="type-exhibitions-desc">Sanat, fotoğraf ve kültürel sergiler</p>
+                    <div class="type-stats">
+                        <span data-lang-key="monthly-exhibitions">Aylık yeni sergiler</span>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 data-lang-key="type-concerts">Müzik Etkinlikleri</h3>
+                    <p data-lang-key="type-concerts-desc">Klasik müzik, jazz ve akustik performanslar</p>
+                    <div class="type-stats">
+                        <span data-lang-key="special-events">Özel etkinlikler</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Gallery -->
+    <section class="event-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="gallery-title">Etkinlik Galerisi</h2>
+                <p data-lang-key="gallery-subtitle">Geçmiş etkinliklerimizden kareler</p>
+            </div>
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-gallery="all" data-lang-key="gallery-all">Tümü</button>
+                <button class="gallery-tab" data-gallery="talks" data-lang-key="gallery-talks">Söyleşiler</button>
+                <button class="gallery-tab" data-gallery="workshops" data-lang-key="gallery-workshops">Atölyeler</button>
+                <button class="gallery-tab" data-gallery="children" data-lang-key="gallery-children">Çocuk</button>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-category="talks">
+                    <img src="img/etkinlikler3.jpg" alt="Yazar Söyleşisi">
+                    <div class="gallery-overlay">
+                        <h4 data-lang-key="gallery-item-1">Ahmet Ümit Söyleşisi</h4>
+                        <p data-lang-key="gallery-date-1">Mart 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="workshops">
+                    <img src="img/etkinlikler4.jpg" alt="Yazma Atölyesi">
+                    <div class="gallery-overlay">
+                        <h4 data-lang-key="gallery-item-2">Yaratıcı Yazma Atölyesi</h4>
+                        <p data-lang-key="gallery-date-2">Şubat 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="children">
+                    <img src="img/etkinlikler5.jpg" alt="Çocuk Etkinliği">
+                    <div class="gallery-overlay">
+                        <h4 data-lang-key="gallery-item-3">Masal Saati</h4>
+                        <p data-lang-key="gallery-date-3">Nisan 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="talks">
+                    <img src="img/etkinlikler6.jpg" alt="Panel Tartışması">
+                    <div class="gallery-overlay">
+                        <h4 data-lang-key="gallery-item-4">Edebiyat Paneli</h4>
+                        <p data-lang-key="gallery-date-4">Ocak 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="workshops">
+                    <img src="img/etkinlikler7.jpg" alt="Sanat Atölyesi">
+                    <div class="gallery-overlay">
+                        <h4 data-lang-key="gallery-item-5">Resim Atölyesi</h4>
+                        <p data-lang-key="gallery-date-5">Mart 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="children">
+                    <img src="img/etkinlikler8.jpg" alt="Çocuk Tiyatrosu">
+                    <div class="gallery-overlay">
+                        <h4 data-lang-key="gallery-item-6">Kukla Tiyatrosu</h4>
+                        <p data-lang-key="gallery-date-6">Nisan 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Registration CTA -->
+    <section class="event-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang-key="cta-title">Etkinliklerimize Katılın</h2>
+                <p data-lang-key="cta-subtitle">Kütüphane üyesi olarak tüm etkinliklerimize ücretsiz katılabilir, öncelikli kayıt hakkından yararlanabilirsiniz</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large" data-lang-key="cta-membership">Üye Ol</a>
+                    <a href="#" class="btn btn-secondary btn-large" data-lang-key="cta-newsletter">Bültene Abone Ol</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Newsletter -->
+    <section class="event-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 data-lang-key="newsletter-title">Etkinlik Bültenimize Abone Olun</h2>
+                <p data-lang-key="newsletter-subtitle">Yeni etkinlikler, özel davetler ve erken kayıt fırsatlarından ilk siz haberdar olun</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresiniz" data-lang-key="newsletter-placeholder">
+                    <button type="submit" class="btn btn-primary" data-lang-key="newsletter-button">Abone Ol</button>
+                </form>
+                <div class="newsletter-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-bell"></i>
+                        <span data-lang-key="benefit-1">Erken bildirimler</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span data-lang-key="benefit-2">Öncelikli kayıt</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-gift"></i>
+                        <span data-lang-key="benefit-3">Özel indirimler</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Litera<span>Hub</span></h3>
+                    <p data-lang-key="footer-about">Modern kütüphanemiz, 2008 yılından beri okuyuculara hizmet vermektedir. Amacımız, bilgiye erişimi kolaylaştırmak ve okuma kültürünü yaygınlaştırmaktır.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang-key="footer-links">Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html" data-lang-key="footer-link-home">Anasayfa</a></li>
+                        <li><a href="all-books.html" data-lang-key="footer-link-catalog">Katalog</a></li>
+                        <li><a href="etkinlikler.html" data-lang-key="footer-link-events">Etkinlikler</a></li>
+                        <li><a href="#" data-lang-key="footer-link-services">Hizmetler</a></li>
+                        <li><a href="#" data-lang-key="footer-link-about">Hakkımızda</a></li>
+                        <li><a href="#" data-lang-key="footer-link-contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3 data-lang-key="footer-hours">Çalışma Saatleri</h3>
+                    <ul>
+                        <li><span data-lang-key="footer-day-mon">Pazartesi</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-tue">Salı</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-wed">Çarşamba</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-thu">Perşembe</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-fri">Cuma</span>: 09:00 - 22:00</li>
+                        <li><span data-lang-key="footer-day-sat">Cumartesi</span>: 10:00 - 22:00</li>
+                        <li><span data-lang-key="footer-day-sun">Pazar</span>: 10:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang-key="footer-contact">İletişim</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-lang-key="footer-address">Kütüphane Caddesi No:42, İstanbul</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+90 212 123 4567</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@literahub.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LiteraHub. <span data-lang-key="footer-rights">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>

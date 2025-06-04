@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="page-title">Hakkımızda - LiteraHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="book">
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+        </div>
+    </div>
+
+    <!-- Navigation - Exactly like index page -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Litera<span>Hub</span></h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" data-lang-key="nav-home">Anasayfa</a></li>
+                    <li><a href="all-books.html" data-lang-key="nav-books">Kitaplar</a></li>
+                    <li><a href="etkinlikler.html" data-lang-key="nav-events">Etkinlikler</a></li>
+                    <li><a href="services.html" data-lang-key="nav-services">Hizmetler</a></li>
+                    <li><a href="about.html" class="active" data-lang-key="nav-about">Hakkımızda</a></li>
+                    <li><a href="contact.html" data-lang-key="nav-contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div class="language-selector">
+                    <div class="selected-lang">
+                        <img src="img/world.png" alt="TR Flag" id="current-flag">
+                        <span id="current-lang-abbr">TR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="lang-dropdown">
+                        <li>
+                            <button class="lang-btn" data-lang="tr">
+                                <img src="img/world.png" alt="TR Flag">
+                                <span>TR</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-btn" data-lang="en">
+                                <img src="img/united-kingdom.png" alt="EN Flag">
+                                <span>EN</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-btn" data-lang="de">
+                                <img src="img/german.png" alt="DE Flag">
+                                <span>DE</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" id="nav-login-btn" class="btn btn-secondary btn-sm" data-lang-key="nav-login">Giriş Yap</a>
+                    <a href="#" id="nav-register-btn" class="btn btn-primary btn-sm" data-lang-key="nav-register">Üye Ol</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section - Clean and Simple like index page -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-lang-key="about-hero-title">Hakkımızda</h1>
+                    <p class="hero-subtitle" data-lang-key="about-hero-subtitle">
+                        Bilgi ve kültürün merkezi olarak 40 yıldır hizmet veriyoruz
+                    </p>
+                    <div class="hero-badge">
+                        <i class="fas fa-award"></i>
+                        <span data-lang-key="about-hero-badge">40 Yıllık Deneyim</span>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label" data-lang-key="about-stat-books">Kitap</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">40</div>
+                            <div class="stat-label" data-lang-key="about-stat-years">Yıl</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label" data-lang-key="about-stat-members">Üye</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Vision Values Section -->
+        <section class="mvv-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-lang-key="about-values-title">Değerlerimiz</h2>
+                    <p data-lang-key="about-values-subtitle">
+                        Kütüphanemizi yönlendiren temel ilkeler
+                    </p>
+                </div>
+                <div class="mvv-grid">
+                    <div class="mvv-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 data-lang-key="about-mission-title">Misyonumuz</h3>
+                        <p data-lang-key="about-mission-text">
+                            Toplumun bilgi ihtiyaçlarını karşılamak ve kültürel gelişime katkıda bulunmak için kaliteli, erişilebilir ve modern kütüphane hizmetleri sunmak.
+                        </p>
+                    </div>
+                    <div class="mvv-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 data-lang-key="about-vision-title">Vizyonumuz</h3>
+                        <p data-lang-key="about-vision-text">
+                            Modern teknoloji ile geleneksel kütüphanecilik hizmetlerini birleştirerek, yaşam boyu öğrenmeyi destekleyen, herkes için erişilebilir bir bilgi ve kültür merkezi olmak.
+                        </p>
+                    </div>
+                    <div class="mvv-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-lang-key="about-values-card-title">Değerlerimiz</h3>
+                        <p data-lang-key="about-values-text">
+                            Eşitlik, erişilebilirlik, kalite, sürekli gelişim, kullanıcı odaklılık ve toplumsal sorumluluk ilkelerimizle hizmet veriyoruz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history-section">
+            <div class="container">
+                <div class="history-content">
+                    <div class="history-text">
+                        <h2 data-lang-key="about-history-title">Tarihçemiz</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">1985</div>
+                                <div class="timeline-content">
+                                    <h4 data-lang-key="about-history-1985-title">Kuruluş</h4>
+                                    <p data-lang-key="about-history-1985-text">
+                                        Kütüphanemiz 1985 yılında küçük bir koleksiyonla hizmete başladı.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1995</div>
+                                <div class="timeline-content">
+                                    <h4 data-lang-key="about-history-1995-title">Genişleme</h4>
+                                    <p data-lang-key="about-history-1995-text">
+                                        İlk büyük genişleme ile koleksiyonumuz 10.000 kitaba ulaştı.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2005</div>
+                                <div class="timeline-content">
+                                    <h4 data-lang-key="about-history-2005-title">Dijitalleşme</h4>
+                                    <p data-lang-key="about-history-2005-text">
+                                        Dijital hizmetler ve online katalog sistemi devreye alındı.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4 data-lang-key="about-history-2024-title">Modern Dönem</h4>
+                                    <p data-lang-key="about-history-2024-text">
+                                        50.000+ kitap ve dijital kaynak ile bölgenin en büyük kütüphanesi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-image">
+                        <div class="image-placeholder">
+                            <img src="img/library-building.jpg" alt="Kütüphane Binası" style="width: 100%; height: auto; border-radius: 10px;">
+                            <p data-lang-key="about-building-text">Kütüphane Binası</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-lang-key="about-team-title">Ekibimiz</h2>
+                    <p data-lang-key="about-team-subtitle">
+                        Deneyimli ve uzman kadromuzla size hizmet veriyoruz
+                    </p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo" style="background: none; overflow: hidden;">
+                            <img src="img/anasayfa5.jpg" alt="Dr. Ayşe Yılmaz" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info">
+                            <h3>Dr. Ayşe Yılmaz</h3>
+                            <p class="member-title" data-lang-key="about-team-director-title">Kütüphane Müdürü</p>
+                            <p class="member-bio" data-lang-key="about-team-director-bio">
+                                20 yıllık deneyimi ile kütüphanemizi yönetiyor ve gelişim stratejilerini belirliyor.
+                            </p>
+                            <div class="member-contact">
+                                <span><i class="fas fa-envelope"></i> ayse.yilmaz@kutuphane.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo" style="background: none; overflow: hidden;">
+                            <img src="img/team-it.jpg" alt="Mehmet Demir" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mehmet Demir</h3>
+                            <p class="member-title" data-lang-key="about-team-it-title">Bilgi İşlem Uzmanı</p>
+                            <p class="member-bio" data-lang-key="about-team-it-bio">
+                                Dijital hizmetlerimizin geliştirilmesi ve teknolojik altyapının yönetiminden sorumlu.
+                            </p>
+                            <div class="member-contact">
+                                <span><i class="fas fa-envelope"></i> mehmet.demir@kutuphane.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo" style="background: none; overflow: hidden;">
+                            <img src="img/team-librarian.jpg" alt="Fatma Kaya" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info">
+                            <h3>Fatma Kaya</h3>
+                            <p class="member-title" data-lang-key="about-team-librarian-title">Kütüphaneci</p>
+                            <p class="member-bio" data-lang-key="about-team-librarian-bio">
+                                Kullanıcı hizmetleri, koleksiyon yönetimi ve okuyucu danışmanlığı hizmetleri.
+                            </p>
+                            <div class="member-contact">
+                                <span><i class="fas fa-envelope"></i> fatma.kaya@kutuphane.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview Section -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-lang-key="about-services-title">Hizmetlerimiz</h2>
+                    <p data-lang-key="about-services-subtitle">
+                        Size sunduğumuz kapsamlı hizmetler
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-book-open"></i>
+                        <h4 data-lang-key="about-service-lending-title">Kitap Ödünç Verme</h4>
+                        <p data-lang-key="about-service-lending-text">
+                            Geniş koleksiyonumuzdan kitap ödünç alma
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-laptop"></i>
+                        <h4 data-lang-key="about-service-digital-title">Dijital Kaynaklar</h4>
+                        <p data-lang-key="about-service-digital-text">
+                            Online veritabanları ve e-kitap erişimi
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-users"></i>
+                        <h4 data-lang-key="about-service-study-title">Çalışma Alanları</h4>
+                        <p data-lang-key="about-service-study-text">
+                            Sessiz ve grup çalışma alanları
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4 data-lang-key="about-service-events-title">Etkinlikler</h4>
+                        <p data-lang-key="about-service-events-text">
+                            Kültürel etkinlikler ve eğitim programları
+                        </p>
+                    </div>
+                </div>
+                <div class="cta-button">
+                    <a href="services.html" class="btn-primary" data-lang-key="about-services-cta">Tüm Hizmetleri Gör</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Litera<span>Hub</span></h3>
+                    <p data-lang-key="footer-about">Modern kütüphanemiz, 2008 yılından beri okuyuculara hizmet vermektedir. Amacımız, bilgiye erişimi kolaylaştırmak ve okuma kültürünü yaygınlaştırmaktır.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang-key="footer-links">Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html" data-lang-key="footer-link-home">Anasayfa</a></li>
+                        <li><a href="all-books.html" data-lang-key="footer-link-catalog">Katalog</a></li>
+                        <li><a href="etkinlikler.html" data-lang-key="footer-link-events">Etkinlikler</a></li>
+                        <li><a href="services.html" data-lang-key="footer-link-services">Hizmetler</a></li>
+                        <li><a href="about.html" data-lang-key="footer-link-about">Hakkımızda</a></li>
+                        <li><a href="contact.html" data-lang-key="footer-link-contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3 data-lang-key="footer-hours">Çalışma Saatleri</h3>
+                    <ul>
+                        <li><span data-lang-key="footer-day-mon">Pazartesi</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-tue">Salı</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-wed">Çarşamba</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-thu">Perşembe</span>: 09:00 - 20:00</li>
+                        <li><span data-lang-key="footer-day-fri">Cuma</span>: 09:00 - 22:00</li>
+                        <li><span data-lang-key="footer-day-sat">Cumartesi</span>: 10:00 - 22:00</li>
+                        <li><span data-lang-key="footer-day-sun">Pazar</span>: 10:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang-key="footer-contact">İletişim</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-lang-key="footer-address">Kütüphane Caddesi No:42, İstanbul</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+90 212 123 4567</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@literahub.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LiteraHub. <span data-lang-key="footer-rights">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+
+    <script src="about.js"></script>
+</body>
+</html>
